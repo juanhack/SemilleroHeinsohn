@@ -27,10 +27,6 @@ public class Arreglos {
 		/**Esta funcion resuelve el problema del arreglo de numeros*/
 		segundoPunto();
 		
-		
-		
-		
-
 	}
 	
 	private static void segundoPunto() {
@@ -42,7 +38,7 @@ public class Arreglos {
  
 		int[] misEnteros = new int[5];
 		for (int i = 0; i < 5; i++) {
-			System.out.print("Ingrese el número en la posición " + (i) + " :");
+			System.out.print("Ingrese el número en la posición " + (i+1) + " :");
 			misEnteros[i] = entrada.nextInt();
 		}
 		entrada.close();
@@ -52,14 +48,17 @@ public class Arreglos {
 					if (mayor < misEnteros[i]) {
 						mayor = misEnteros[i];
 					}
-					System.out.println(String.format("Posición [%d] Elemento: %d", i,
-							misEnteros[i]));
 				}
+				
 		if(suma > 300) {
 			suma = (float) (suma * 1.10);
 		}else {
 			suma = (float) (suma * 1.07);
 		}
+		
+		System.out.println("La suma es: $" + suma);
+		
+		System.out.println("El mayo valor fue: $" + mayor);
 	}
 	
 	private static void primerPunto() {
